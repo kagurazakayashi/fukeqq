@@ -1,0 +1,43 @@
+{
+    "name": "fukeqq",
+    "version": "1.0.0",
+    "description": "腾讯课堂签到脚本",
+    "main": "fukeqq.js",
+    "scripts": {
+        "debug": "tsc src/fukeqq.ts",
+        "build": "tsc src/fukeqq.ts && gulp jscompress"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kagurazakayashi/fukeqq.git"
+    },
+    "keywords": [],
+    "author": "KagurazakaYashi",
+    "license": "",
+    "bugs": {
+        "url": "https://github.com/kagurazakayashi/fukeqq/issues"
+    },
+    "homepage": "https://github.com/kagurazakayashi/fukeqq#readme",
+    "devDependencies": {
+        "@babel/preset-env": "^7.13.15",
+        "@typescript-eslint/eslint-plugin": "^4.21.0",
+        "@typescript-eslint/parser": "^4.21.0",
+        "css-loader": "^5.2.1",
+        "eslint": "^7.24.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-typescript": "^0.14.0",
+        "style-loader": "^2.0.0",
+        "ts-loader": "^8.1.0",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4",
+        "typescript-eslint-parser": "^22.0.0",
+        "webpack": "^5.33.2",
+        "webpack-cli": "^4.6.0"
+    },
+    "dependencies": {
+        "@babel/plugin-transform-typescript": "^7.13.0",
+        "core-js": "^2.6.12",
+        "gulp": "^4.0.2",
+        "gulp-uglify": "^3.0.2"
+    }
+}
