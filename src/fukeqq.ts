@@ -3,27 +3,28 @@ class Fukeqq {
     btnName: string = 's-btn s-btn--primary s-btn--m'
     runningInfoI: number = 0
 
-     /**
-     * 初始化，在指令碼載入之後，等 5 秒鐘再開始
-     */
+    /**
+    * 初始化，在指令碼載入之後，等 5 秒鐘再開始
+    */
     constructor() {
         setTimeout(() => {
             this.enableTimer();
         }, 5000);
     }
 
-     /**
-     * 建立計時器，每 5 秒執行一次檢測
-     */
+    /**
+    * 建立計時器，每 5 秒執行一次檢測
+    */
     enableTimer() {
-        console.log(Date().toLocaleString(), this.qianDao+'使能');
+        console.log(Date().toLocaleString(), this.qianDao + '使能');
         setInterval(() => {
             const sbtn: HTMLSpanElement | null = this.chkBtn();
             if (sbtn) {
                 this.clickBtn(sbtn);
             }
             if (this.runningInfoI++ == 100) {
-                console.log(Date().toLocaleString(), this.qianDao+'运行中');
+                console.log(Date().toLocaleString(), this.qianDao + '运行中');
+                this.runningInfoI = 0;
             }
         }, 5000);
     }
