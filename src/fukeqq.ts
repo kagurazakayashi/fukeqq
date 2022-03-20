@@ -29,12 +29,13 @@ class Fukeqq {
         }, 5000);
     }
 
-     /**
-     * 觸發點按按鈕。會在 1 - 6 秒隨機延時後點按按鈕。
-     * @param {HTMLSpanElement} sbtn 當前按鈕
-     */
+    /**
+    * 觸發點按按鈕。會在 1 - 6 秒隨機延時後點按按鈕。
+    * @param {HTMLSpanElement} sbtn 當前按鈕
+    */
     clickBtn(sbtn: HTMLSpanElement) {
-        const randomSec = Math.floor(Math.random() * (5)) + 1;
+        const randomSec: number = Math.floor(Math.random() * (5)) + 1;
+        console.warn(Date().toLocaleString(), '准备' + this.qianDao, randomSec.toString);
         setTimeout(() => {
             sbtn.click();
             console.warn(Date().toLocaleString(), this.qianDao + '完毕！');
